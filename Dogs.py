@@ -2,7 +2,7 @@ from Animal import Animal
 
 
 class Dog(Animal):
-    paws =""
+    paws =[]
     tail = ""
     wool = ""
     mustache = ""
@@ -22,7 +22,6 @@ class Dog(Animal):
                  m="<"):
         self.body = b
         self.head = h
-
         self.paws = p
         self.tail = t
         self.wool = w
@@ -38,7 +37,7 @@ class Dog(Animal):
     def start_wag_tail(self):
 
         self.tail= "|_|"
-        pass
+        return self.tail
 
     def finish_wag_tail(self):
 

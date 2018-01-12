@@ -4,7 +4,7 @@ class Animal:
     head = ""
 
     meal = ""
-    looking =""
+    looking = ""
 
     def look(self):
         self.looking = self.body + "-" + self.head
@@ -17,7 +17,7 @@ class Animal:
 
     def eat(self, some):
         self.meal = some
-        self.body=self.body +"-"+some
+        self.body=self.body + "-" + some
         pass
 
     def shit(self):
