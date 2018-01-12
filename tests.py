@@ -1,8 +1,5 @@
 import unittest
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from Dogs import Dog
-from Animal import Animal
 
 
 class dog_tests(unittest.TestCase):
@@ -18,13 +15,6 @@ class dog_tests(unittest.TestCase):
             print("It's not a dog - it is monster !!! ")
         elif len(self.dog.paws)< 4:
             print("It's a broken dog")
-
-    try:
-        if len(self.dog.paws) == 4:
-            self.assertFalse(True, 'Everything is great')
-
-    except Exception as e:
-            self.assertTrue(False, 'ERROR' + e.__str__())
 
 
     def test_02_dog_wag_tail(self):
