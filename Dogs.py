@@ -8,8 +8,8 @@ class Dog(Animal):
     mustache = ""
 
     def look(self):
-        self.looking = self.tail+self.body[0]+self.wool+self.body[1]+"-" + self.head+ self.mustache+"\n"+\
-                       "   "+self.paws[0]+ self.paws[1]+self.paws[2]+self.paws[3]
+        self.looking = "\033[31m"+self.tail+self.body[0]+self.wool+self.body[1]+"-" + self.head+ self.mustache+"\n"+\
+                       "   "+"\033[32m"+self.paws[0]+ self.paws[1]+self.paws[2]+self.paws[3]+"\033[0m"
         print()
         print(self.looking)
 
