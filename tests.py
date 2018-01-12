@@ -16,8 +16,6 @@ class dog_tests(unittest.TestCase):
         elif len(self.dog.paws)< 4:
             print("It's a broken dog")
 
-        self.assertIs(self, len(self.dog.paws)== 4, len(self.dog.paws)> 4, 'ERROR')
-        self.assert_ = True
     # try:
 
     #     if len(self.dog.paws) == 4:
