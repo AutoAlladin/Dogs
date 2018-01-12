@@ -24,23 +24,6 @@ class dog_tests(unittest.TestCase):
         else:
             print("Dog is sad")
 
-    # try:
-    #     if len(self.dog.paws) == 4:
-    #         self.assertFalse(True, 'Everything is great')
-    #
-    # except Exception as e:
-    #     self.assertTrue(False, 'ERROR' + e.__str__())
-
-
     def test_03_dog_body(self):
         if self.dog.body == self.dog.wool :
             print(self.dog.wool)
-
-        # try:
-        #     if len(self.dog.paws) == 4:
-        #         self.assertFalse(True, 'Everything is great')
-        #
-        # except Exception as e:
-        #     self.assertTrue(False, 'ERROR' + e.__str__())
-
-
