@@ -52,7 +52,7 @@ class Dog(Animal):
         self.str_3 = str_3
         self.str_4 = str_4
 
-        pass
+
 
     def look_dog2(self):
         self.lookk = self.str1 +"\n"+self.str2 +"\n" +self.str3 +"\n" +self.str4
