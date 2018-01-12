@@ -11,6 +11,8 @@ if __name__=="__main__":
     d = Dog()
     d.look_dog2()
 
+    ld = Dog()
+    ld.look_dog()
 
     # print(animal.look())
     # animal.eat("кашка")
