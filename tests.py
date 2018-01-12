@@ -16,6 +16,16 @@ class dog_tests(unittest.TestCase):
         elif len(self.dog.paws)< 4:
             print("It's a broken dog")
 
+        self.assertIs(self, len(self.dog.paws)== 4, len(self.dog.paws)> 4, 'ERROR')
+        self.assert_ = True
+    # try:
+
+    #     if len(self.dog.paws) == 4:
+    #         self.assertFalse(True, 'Everything is great')
+    #
+    # except Exception as e:
+    #         self.assertTrue(False, 'ERROR' + e.__str__())
+
 
     def test_02_dog_wag_tail(self):
         self.dog.start_wag_tail()
