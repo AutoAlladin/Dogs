@@ -8,6 +8,9 @@ if __name__=="__main__":
     hairless_dog = Dog(w="      ")
     hairless_dog.look()
 
+    d = Dog()
+    d.look_dog2()
+
 
     # print(animal.look())
     # animal.eat("кашка")

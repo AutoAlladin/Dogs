@@ -5,6 +5,7 @@ class Animal:
 
     meal = ""
     looking = ""
+    lookk = ""
 
     def look(self):
         self.looking = self.body + "-" + self.head
