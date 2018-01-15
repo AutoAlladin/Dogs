@@ -16,6 +16,11 @@ class dog_tests(unittest.TestCase):
         elif len(self.dog.paws)< 4:
             print("It's a broken dog")
 
+        with self.subTest('left'):
+            self.assertEqual(True, True)
+        with self.subTest('right'):
+            self.assertEqual(True, True)
+
     # try:
 
     #     if len(self.dog.paws) == 4:
@@ -37,9 +42,9 @@ class dog_tests(unittest.TestCase):
             print(self.dog.wool)
 
 
-    def test_s(self):
-        with self.subTest('left'):
-            self.assertEqual(True, True)
-        with self.subTest('right'):
-            self.assertEqual(True, True)
+    # def test_s(self):
+    #     with self.subTest('left'):
+    #         self.assertEqual(True, True)
+    #     with self.subTest('right'):
+    #         self.assertEqual(True, True)
 
