@@ -35,3 +35,11 @@ class dog_tests(unittest.TestCase):
     def test_03_dog_body(self):
         if self.dog.body == self.dog.wool :
             print(self.dog.wool)
+
+
+    def test_s(self):
+        with self.subTest('left'):
+            self.assertEqual(True, True)
+        with self.subTest('right'):
+            self.assertEqual(True, True)
+
