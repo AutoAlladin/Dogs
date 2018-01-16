@@ -1,7 +1,7 @@
 import unittest
 from unittest import TestSuite
 
-
+import sys
 import xmlrunner
 
 from tests import dog_tests
@@ -14,6 +14,7 @@ if __name__ == '__main__':
     suite.addTest(dog_tests("test_s"))
 
 
-    testRunner = xmlrunner.XMLTestRunner(output='test-reports', verbosity=2)
+    testRunner = xmlrunner.XMLTestRunner(output='test-reports',
+                                         verbosity=2)
 
     testRunner.run(suite)
