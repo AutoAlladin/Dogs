@@ -14,6 +14,7 @@ class Dog(Animal):
         print(self.looking)
 
     def look_dog(self):
+
         self.loo = self.str_1+"\n"+self.str_2+"\n"+self.str_3+"\n"+self.str_4
         print()
         print(self.loo)
@@ -72,5 +73,4 @@ class Dog(Animal):
 
         self.tail= "---"
         pass
-
 

@@ -8,13 +8,17 @@ class dog_tests(unittest.TestCase):
     def setUp(self):
         self.dog = Dog()
 
+
     def test_01_dog_paws(self):
-        if len(self.dog.paws)== 4:
-            print("It's a normal dog")
-        elif len(self.dog.paws)> 4:
-            print("It's not a dog - it is monster !!! ")
-        elif len(self.dog.paws)< 4:
-            print("It's a broken dog")
+        with self.subTest("run_test"):
+            if len(self.dog.paws)== 4:
+                print("It's a normal dog")
+            elif len(self.dog.paws)> 4:
+                print("It's not a dog - it is monster !!! ")
+            elif len(self.dog.paws)< 4:
+                print("It's a broken dog")
+
+
 
         with self.subTest('left'):
             self.assertEqual(True, True)
