@@ -72,5 +72,5 @@ class Dog(Animal):
     def finish_wag_tail(self):
 
         self.tail= "---"
-        pass
+        return self.tail
 

@@ -20,10 +20,15 @@ class dog_tests(unittest.TestCase):
 
 
 
-        with self.subTest('left'):
+        with self.subTest('4'):
             self.assertEqual(True, True)
-        with self.subTest('right'):
+        with self.subTest('> 4'):
             self.assertEqual(True, True)
+        with self.subTest('< 4'):
+            self.assertEqual(True, True)
+
+
+
 
     # try:
 
@@ -36,14 +41,31 @@ class dog_tests(unittest.TestCase):
 
     def test_02_dog_wag_tail(self):
         self.dog.start_wag_tail()
-        if self.dog.tail == "|_|" :
-            print("Dog is happy")
-        else:
-            print("Dog is sad")
+        self.dog.finish_wag_tail()
+        # if self.dog.tail == "|_|":
+        #     print("Dog is happy")
+        # else:
+        #     print("Dog is sad")
+        #self.dog.finish_wag_tail()
+        # else:
+        #     #self.dog.tail == "---":
+        #     print("Dog is sad")
+
+        self.assertNotEqual(self, self.dog.start_wag_tail(), self.dog.finish_wag_tail(), "ERROR")
+        if self.dog.start_wag_tail() == self.dog.finish_wag_tail():
+            return False
+            print(self.dog.start_wag_tail())
+            print(self.dog.finish_wag_tail())
+
 
     def test_03_dog_body(self):
-        if self.dog.body == self.dog.wool :
-            print(self.dog.wool)
+        body1 = self.dog.body[0] + self.dog.wool + self.dog.body[1]
+        body2 = self.dog.body
+        print(body1)
+        print(body2)
+
+        if self.assertEqual(self, body1, body2, "Error"):
+            return False
 
 
     # def test_s(self):

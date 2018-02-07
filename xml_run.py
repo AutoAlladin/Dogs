@@ -11,7 +11,7 @@ if __name__ == '__main__':
     suite.addTest(dog_tests("test_01_dog_paws"))
     suite.addTest(dog_tests("test_02_dog_wag_tail"))
     suite.addTest(dog_tests("test_03_dog_body"))
-    suite.addTest(dog_tests("test_s"))
+    #suite.addTest(dog_tests("test_s"))
 
 
     testRunner = xmlrunner.XMLTestRunner(output='test-reports',
